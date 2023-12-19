@@ -1,0 +1,21 @@
+<div class="w3-container">
+  <h2>Country Data</h2>
+
+  <% @country_data.each do |data| %>
+    <div class="w3-card-4">
+      <div class="w3-container">
+        <h3><%= data.name %></h3>
+        <p>Mobile Phones: <%= data.mobilephones %></p>
+        <p>Mortality Under 5: <%= data.mortalityunder5 %></p>
+        <p>health Expenditure Per Capita: <%= data.healthexpenditurepercapita %> </p>
+        <p>health expenditure percent gdp: <%= data.healthexpenditureppercentgdp %></p>
+        <p>population: <%= data.population %></p>
+        <p>population urban: <%= data.populationurban %></p>
+        <p>birthrate: <%= data.birthrate %></p>
+        <p>life expectancy: <%= data.lifeexpectancy %></p>
+        <p>gdp: <%= data.gdp %></p>
+        <!-- Add more fields as needed -->
+      </div>
+    </div>
+  <% end %>
+</div>
